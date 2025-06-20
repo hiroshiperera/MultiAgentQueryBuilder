@@ -57,7 +57,19 @@ app/
 
 ---
 
-## 📌 Setup Instructions (Optional Section)
+## 📌 Setup Instructions 
+```
+pip install -r requirements.txt
+```
 
-> Add if you want others to run your project easily. Example:
+---
 
+### Set up your .env file
+
+Create a .env file with the following content:
+
+```
+GOOGLE_GEN_API_KEY=your_google_genai_key
+```
+
+---
