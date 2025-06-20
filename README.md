@@ -89,7 +89,7 @@ state = {'message': ['What is the profit of PLR in 2025?']}
 ```
 
 ---
-The system will:
+### The system will:
 
 Use the Supervisor to classify the query
 
@@ -99,4 +99,34 @@ Use the Validator to ensure response relevance
 
 Loop back to Supervisor if incomplete
 ---
+
+### 🧠 Technologies Used
+LangGraph
+
+LangChain
+
+Google Gemini 1.5 Flash
+
+HuggingFace Embeddings (BAAI/bge-small-en)
+
+Chroma Vector Store
+
+Tavily Web Search API
+
+Pydantic for parsing and validation
+
+
+---
+
+### 📌 TODO / Future Improvements
+
+ Add Streamlit or FastAPI frontend
+
+ Integrate better validation with confidence scores
+
+ Add retry logic and timeout handling for LLM calls
+
+ Dockerize the project for production deployment
+
+ Add tests for parser, templates, and routers
 
