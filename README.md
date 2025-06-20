@@ -22,11 +22,11 @@ app/
 │ ├── template_manager.py
 │ ├── parser.py
 │ └── pydantic_schema.py
-├── pipelines/ # Nodes and workflows (RAG, LLM, Web, Validation)
-│ ├── llm_agent.py
-│ ├── rag_agent.py
-│ ├── validation_agent.py
-│ ├── web_agent.py
+├── nodes/ # Nodes and workflows (RAG, LLM, Web, Validation)
+│ ├── llm_node.py
+│ ├── rag_node.py
+│ ├── validation.py
+│ ├── web_crawler.py
 │ └── rag/ # RAG internals
 │ ├── chunking.py
 │ ├── chromaDb.py
@@ -43,3 +43,21 @@ app/
 └── data/ # Input PDF files
 
 ```
+
+---
+
+## 🚀 Features
+
+✅ LangGraph-based conditional workflow  
+✅ Multi-agent routing using Gemini-1.5 Flash  
+✅ Pydantic-validated JSON parsing  
+✅ PDF ingestion and chunking with LangChain  
+✅ MMR-based retrieval using Chroma vector DB  
+✅ LLM-powered answer validation with retry logic
+
+---
+
+## 📌 Setup Instructions (Optional Section)
+
+> Add if you want others to run your project easily. Example:
+
