@@ -12,7 +12,7 @@ It routes user queries to the most relevant knowledge module based on intent:
 
 ## 📦 Folder Structure
 
----
+
 ```
 
 app/
@@ -62,7 +62,7 @@ app/
 pip install -r requirements.txt
 ```
 
----
+
 
 ### Set up your .env file
 
@@ -72,4 +72,31 @@ Create a .env file with the following content:
 GOOGLE_GEN_API_KEY=your_google_genai_key
 ```
 
+### Add your PDF
+
+Place the target PDF (e.g., company report) in the data/ folder. Update the file path in main.py if needed.
+
+### Run the app
+```
+python main.py
+```
+
 ---
+
+### Sample Query
+```
+state = {'message': ['What is the profit of PLR in 2025?']}
+```
+
+---
+The system will:
+
+Use the Supervisor to classify the query
+
+Route to RAG / WEB / LLM module
+
+Use the Validator to ensure response relevance
+
+Loop back to Supervisor if incomplete
+---
+
